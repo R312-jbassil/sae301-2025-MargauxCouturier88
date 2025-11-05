@@ -8,7 +8,15 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "devDependencies": {
+    "@astrojs/tailwind": "^0.5.0",
+    "tailwindcss": "^4.0.0",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20"
+  },
   "dependencies": {
+    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource/raleway": "^5.2.8",
     "astro": "^5.15.3",
     "daisyui": "^5.4.4"
   }

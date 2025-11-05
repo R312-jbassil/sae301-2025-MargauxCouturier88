@@ -1,0 +1,71 @@
+---
+import logo from '../assets/images/logo.svg';
+---
+
+<nav class="navbar bg-primary text-primary-content shadow-lg sticky top-0 z-50">
+
+  <div class="flex-1">
+    <a href="/" class="btn btn-ghost normal-case text-xl font-heading font-bold gap-2">
+      <img src={logo.src} alt="TaVue Logo" class="w-8 h-8 object-contain" />
+      TaVue
+    </a>
+  </div>
+
+
+  <div class="flex-none gap-6 hidden md:flex">
+    <a href="/produits" class="link link-hover font-heading font-semibold">
+      PRODUITS
+    </a>
+    <a href="/personnalisation" class="link link-hover font-heading font-semibold">
+      PERSONNALISATION
+    </a>
+    <a href="/decouvrir" class="link link-hover font-heading font-semibold">
+      DÉCOUVRIR
+    </a>
+    <a href="/boutique" class="link link-hover font-heading font-semibold">
+      BOUTIQUE
+    </a>
+    <a href="/service-client" class="link link-hover font-heading font-semibold">
+      SERVICE CLIENT
+    </a>
+  </div>
+
+
+  <div class="flex-none gap-4">
+    <button class="btn btn-circle btn-ghost" aria-label="Panier">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 3h2l.4 2H21l-.9 4.5H6.5l.5 2.5h11l-.9 4.5H6.5l.5 2.5H4zm0 0" />
+      </svg>
+    </button>
+
+    <a href="/connexion" class="btn btn-outline btn-sm font-heading font-semibold text-primary-content border-primary-content hover:bg-primary-content hover:text-primary">
+      SE CONNECTER
+    </a>
+  </div>
+
+
+  <div class="flex-none md:hidden">
+    <div class="dropdown dropdown-end">
+      <button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </button>
+      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a href="/produits" class="font-heading">PRODUITS</a></li>
+        <li><a href="/personnalisation" class="font-heading">PERSONNALISATION</a></li>
+        <li><a href="/decouvrir" class="font-heading">DÉCOUVRIR</a></li>
+        <li><a href="/boutique" class="font-heading">BOUTIQUE</a></li>
+        <li><a href="/service-client" class="font-heading">SERVICE CLIENT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .link-hover:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+</style>
