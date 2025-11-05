@@ -141,8 +141,8 @@ import iconeMedaille from "../assets/images/medaille.svg";
                 </div>
             </div>
 
-            <div class="md:hidden overflow-x-auto pb-4">
-                <div class="flex gap-4 min-w-max px-4">
+            <div class="md:hidden overflow-x-auto pb-4 -mx-4 px-4">
+                <div class="flex gap-4 min-w-max">
                     <div
                         class="bg-white rounded-3xl overflow-hidden shadow-md flex-shrink-0 w-80"
                         style="background-color: #F5F1E8;"
@@ -277,12 +277,13 @@ import iconeMedaille from "../assets/images/medaille.svg";
                         100% personnel. Chez nous, chaque paire est unique,
                         comme vous.
                     </p>
-                    <button
+                    <a
+                        href="/personnalisation"
                         class="btn px-4 md:px-6 py-2 md:py-3 rounded-md font-bold font-['Raleway'] text-xs uppercase transition"
-                        style="background-color: #A0826D; color: white;"
+                        style="background-color: #A0826D; color: white; display: inline-block; text-align: center;"
                     >
                         DÉCOUVRIR LA PERSONNALISATION
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -315,161 +316,176 @@ import iconeMedaille from "../assets/images/medaille.svg";
                 </p>
             </div>
 
-            <div class="overflow-x-auto pb-4 -mx-4 md:mx-0 px-4 md:px-0">
+            <div
+                class="overflow-x-auto pb-4 -mx-4 md:mx-0 md:px-0 px-4 scroll-smooth"
+                style="scroll-behavior: smooth;"
+            >
                 <div
-                    class="flex gap-4 md:gap-8 min-w-max md:min-w-fit md:flex-wrap md:justify-center px-2 md:px-0"
+                    class="flex gap-4 md:gap-8 min-w-max md:min-w-fit md:justify-center"
                 >
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
-                        style="background-color: #F5F1E8;"
-                    >
-                        <h3
-                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
-                        >
-                            DES LUNETTES QUI ME RESSEMBLENT ENFIN
-                        </h3>
+                    <div class="flex-shrink-0 w-72 md:w-96">
                         <div
-                            class="w-12 h-1 bg-neutral mb-4"
-                            style="background-color: #A77B5B;"
+                            class="bg-white rounded-3xl overflow-hidden shadow-md p-4 md:p-6 flex flex-col h-full"
+                            style="background-color: #F5F1E8;"
                         >
+                            <h3
+                                class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                            >
+                                DES LUNETTES QUI ME RESSEMBLENT ENFIN
+                            </h3>
+                            <div
+                                class="w-12 h-1 bg-neutral mb-4"
+                                style="background-color: #A77B5B;"
+                            >
+                            </div>
+                            <p
+                                class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                            >
+                                J'ai pu personnaliser chaque détail de ma
+                                monture, du coloris à la forme, pour obtenir une
+                                paire unique qui correspond parfaitement à ma
+                                personnalité. Le processus était simple, le
+                                rendu est super et je me sens satisfait à l'aise
+                                avec mes nouvelles lunettes !
+                            </p>
+                            <p
+                                class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                            >
+                                MARC, 32 ANS
+                            </p>
                         </div>
-                        <p
-                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
-                        >
-                            J'ai pu personnaliser chaque détail de ma monture,
-                            du coloris à la forme, pour obtenir une paire unique
-                            qui correspond parfaitement à ma personnalité. Le
-                            processus était simple, le rendu est super et je me
-                            sens satisfait à l'aise avec mes nouvelles lunettes
-                            !
-                        </p>
-                        <p
-                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
-                        >
-                            MARC, 32 ANS
-                        </p>
                     </div>
 
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
-                        style="background-color: #F5F1E8;"
-                    >
-                        <h3
-                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
-                        >
-                            UNE EXPÉRIENCE VRAIMENT UNIQUE
-                        </h3>
+                    <div class="flex-shrink-0 w-72 md:w-96">
                         <div
-                            class="w-12 h-1 bg-neutral mb-4"
-                            style="background-color: #A77B5B;"
+                            class="bg-white rounded-3xl overflow-hidden shadow-md p-4 md:p-6 flex flex-col h-full"
+                            style="background-color: #F5F1E8;"
                         >
+                            <h3
+                                class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                            >
+                                UNE EXPÉRIENCE VRAIMENT UNIQUE
+                            </h3>
+                            <div
+                                class="w-12 h-1 bg-neutral mb-4"
+                                style="background-color: #A77B5B;"
+                            >
+                            </div>
+                            <p
+                                class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                            >
+                                Pouvoir jouer avec les options et visualiser le
+                                résultat en direct a rendu la création très
+                                amusante. Mes lunettes sont devenues mon
+                                accessoire préféré, et la beauté incomparable.
+                                Je recommande le service à ceux qui veulent se
+                                démarquer.
+                            </p>
+                            <p
+                                class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                            >
+                                ALINE, 26 ANS
+                            </p>
                         </div>
-                        <p
-                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
-                        >
-                            Pouvoir jouer avec les options et visualiser le
-                            résultat en direct a rendu la création très
-                            amusante. Mes lunettes sont devenues mon accessoire
-                            préféré, et la beauté incomparable. Je recommande le
-                            service à ceux qui veulent se démarquer.
-                        </p>
-                        <p
-                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
-                        >
-                            ALINE, 26 ANS
-                        </p>
                     </div>
 
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
-                        style="background-color: #F5F1E8;"
-                    >
-                        <h3
-                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
-                        >
-                            SERVICE CLIENT ET QUALITÉ AU RENDEZ-VOUS
-                        </h3>
+                    <div class="flex-shrink-0 w-72 md:w-96">
                         <div
-                            class="w-12 h-1 bg-neutral mb-4"
-                            style="background-color: #A77B5B;"
+                            class="bg-white rounded-3xl overflow-hidden shadow-md p-4 md:p-6 flex flex-col h-full"
+                            style="background-color: #F5F1E8;"
                         >
+                            <h3
+                                class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                            >
+                                SERVICE CLIENT ET QUALITÉ AU RENDEZ-VOUS
+                            </h3>
+                            <div
+                                class="w-12 h-1 bg-neutral mb-4"
+                                style="background-color: #A77B5B;"
+                            >
+                            </div>
+                            <p
+                                class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                            >
+                                Le suivi de commande était top et j'ai été bien
+                                conseillé tout au long du processus. Le rendu
+                                final est moderne et la qualité irréprochable.
+                                Pour moi, c'est la meilleure façon de porter des
+                                lunettes qui me ressemblent vraiment.
+                            </p>
+                            <p
+                                class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                            >
+                                JULIEN, 45 ANS
+                            </p>
                         </div>
-                        <p
-                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
-                        >
-                            Le suivi de commande était top et j'ai été bien
-                            conseillé tout au long du processus. Le rendu final
-                            est moderne et la qualité irréprochable. Pour moi,
-                            c'est la meilleure façon de porter des lunettes qui
-                            me ressemblent vraiment.
-                        </p>
-                        <p
-                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
-                        >
-                            JULIEN, 45 ANS
-                        </p>
                     </div>
 
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
-                        style="background-color: #F5F1E8;"
-                    >
-                        <h3
-                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
-                        >
-                            CONFORT ET IDENTITÉ RÉUNIS
-                        </h3>
+                    <div class="flex-shrink-0 w-72 md:w-96">
                         <div
-                            class="w-12 h-1 bg-neutral mb-4"
-                            style="background-color: #A77B5B;"
+                            class="bg-white rounded-3xl overflow-hidden shadow-md p-4 md:p-6 flex flex-col h-full"
+                            style="background-color: #F5F1E8;"
                         >
+                            <h3
+                                class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                            >
+                                CONFORT ET IDENTITÉ RÉUNIS
+                            </h3>
+                            <div
+                                class="w-12 h-1 bg-neutral mb-4"
+                                style="background-color: #A77B5B;"
+                            >
+                            </div>
+                            <p
+                                class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                            >
+                                La personnalisation m'a offert des lunettes à la
+                                fois élégantes et très confortables. J'ai
+                                apprécié le côté intuitif du système et la
+                                possibilité de prévisualiser le modèle avant de
+                                commander. Maintenant, ma monture reflète
+                                parfaitement qui je suis.
+                            </p>
+                            <p
+                                class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                            >
+                                NICOLAS, 41 ANS
+                            </p>
                         </div>
-                        <p
-                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
-                        >
-                            La personnalisation m'a offert des lunettes à la
-                            fois élégantes et très confortables. J'ai apprécié
-                            le côté intuitif du système et la possibilité de
-                            prévisualiser le modèle avant de commander.
-                            Maintenant, ma monture reflète parfaitement qui je
-                            suis.
-                        </p>
-                        <p
-                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
-                        >
-                            NICOLAS, 41 ANS
-                        </p>
                     </div>
 
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
-                        style="background-color: #F5F1E8;"
-                    >
-                        <h3
-                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
-                        >
-                            UN STYLE QUI M'APPARTIENT
-                        </h3>
+                    <div class="flex-shrink-0 w-72 md:w-96">
                         <div
-                            class="w-12 h-1 bg-neutral mb-4"
-                            style="background-color: #A77B5B;"
+                            class="bg-white rounded-3xl overflow-hidden shadow-md p-4 md:p-6 flex flex-col h-full"
+                            style="background-color: #F5F1E8;"
                         >
+                            <h3
+                                class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                            >
+                                UN STYLE QUI M'APPARTIENT
+                            </h3>
+                            <div
+                                class="w-12 h-1 bg-neutral mb-4"
+                                style="background-color: #A77B5B;"
+                            >
+                            </div>
+                            <p
+                                class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                            >
+                                Je voulais une paire de lunettes vraiment
+                                adaptée à mon visage et à mon style. Grâce au
+                                configurateur, j'ai pu choisir la forme, la
+                                couleur et les détails en toute simplicité.
+                                Résultat : je reçois sans arrêt des compliments
+                                ! C'est exactement ce que je cherchais pour
+                                affirmer mon personnalité.
+                            </p>
+                            <p
+                                class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                            >
+                                SOPHIE, 28 ANS
+                            </p>
                         </div>
-                        <p
-                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
-                        >
-                            Je voulais une paire de lunettes vraiment adaptée à
-                            mon visage et à mon style. Grâce au configurateur,
-                            j'ai pu choisir la forme, la couleur et les détails
-                            en toute simplicité. Résultat : je reçois sans arrêt
-                            des compliments ! C'est exactement ce que je
-                            cherchais pour affirmer mon personnalité.
-                        </p>
-                        <p
-                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
-                        >
-                            SOPHIE, 28 ANS
-                        </p>
                     </div>
                 </div>
             </div>
