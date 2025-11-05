@@ -1,62 +1,106 @@
 ---
-import logo from '../assets/images/logo.svg';
+import logo from "../assets/images/logo.svg";
+import cartIcon from "../assets/images/panier.svg";
 ---
 
-<nav class="navbar bg-primary text-primary-content shadow-lg sticky top-0 z-50">
-
+<nav
+  class="navbar bg-primary text-primary-content shadow-lg sticky top-0 z-50 px-6 py-4"
+>
   <div class="flex-1">
-    <a href="/" class="btn btn-ghost normal-case text-xl     gap-2">
-      <img src={logo.src} alt="TaVue Logo" class="w-8 h-8 object-contain" />
-      TaVue
+    <a
+      href="/"
+      class="normal-case text-xl gap-4 flex items-center no-underline ml-4"
+    >
+      <img src={logo.src} alt="TaVue Logo" class="w-16 h-16 object-contain" />
     </a>
   </div>
 
-
-  <div class="flex-none gap-6 hidden md:flex">
-    <a href="/produits" class="link link-hover   font-semibold">
-      PRODUITS
-    </a>
-    <a href="/personnalisation" class="link link-hover   font-semibold">
+  <div class="flex-none gap-8 hidden md:flex">
+    <a href="/produits" class="link link-hover font-semibold"> PRODUITS </a>
+    <a href="/personnalisation" class="link link-hover font-semibold">
       PERSONNALISATION
     </a>
-    <a href="/decouvrir" class="link link-hover   font-semibold">
-      DÉCOUVRIR
-    </a>
-    <a href="/boutique" class="link link-hover   font-semibold">
-      BOUTIQUE
-    </a>
-    <a href="/service-client" class="link link-hover   font-semibold">
+    <a href="/decouvrir" class="link link-hover font-semibold"> DÉCOUVRIR </a>
+    <a href="/boutique" class="link link-hover font-semibold"> BOUTIQUE </a>
+    <a href="/service-client" class="link link-hover font-semibold">
       SERVICE CLIENT
     </a>
   </div>
 
-
-  <div class="flex-none gap-4">
-    <button class="btn btn-circle btn-ghost" aria-label="Panier">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M3 3h2l.4 2H21l-.9 4.5H6.5l.5 2.5h11l-.9 4.5H6.5l.5 2.5H4zm0 0" />
-      </svg>
+  <div class="flex-none gap-6 hidden md:flex mr-4 items-center">
+    <button class="p-2 rounded-full ml-4" aria-label="Panier">
+      <img src={cartIcon.src} alt="Panier" class="w-11 h-11 object-contain" />
     </button>
 
-    <a href="/connexion" class="btn btn-outline btn-sm   font-semibold text-primary-content border-primary-content hover:bg-primary-content hover:text-primary">
+    <a
+      href="/connexion"
+      class="btn btn-outline font-semibold text-primary-content border-primary-content hover:bg-primary-content hover:text-primary"
+    >
       SE CONNECTER
     </a>
   </div>
 
+  <div class="flex-none gap-4 md:hidden mr-2 items-center">
+    <button class="p-2 rounded-full" aria-label="Panier">
+      <img src={cartIcon.src} alt="Panier" class="w-11 h-11 object-contain" />
+    </button>
 
-  <div class="flex-none md:hidden">
     <div class="dropdown dropdown-end">
-      <button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+      <button tabindex="0" class="p-2 rounded-full" aria-label="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-11 w-11"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"></path>
         </svg>
       </button>
-      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a href="/produits" class=" ">PRODUITS</a></li>
-        <li><a href="/personnalisation" class=" ">PERSONNALISATION</a></li>
-        <li><a href="/decouvrir" class=" ">DÉCOUVRIR</a></li>
-        <li><a href="/boutique" class=" ">BOUTIQUE</a></li>
-        <li><a href="/service-client" class=" ">SERVICE CLIENT</a></li>
+      <ul
+        tabindex="0"
+        class="dropdown-content z-[1] menu p-2 shadow bg-primary rounded-box w-52"
+      >
+        <li>
+          <a
+            href="/produits"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >PRODUITS</a>
+        </li>
+        <li>
+          <a
+            href="/personnalisation"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >PERSONNALISATION</a>
+        </li>
+        <li>
+          <a
+            href="/decouvrir"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >DÉCOUVRIR</a>
+        </li>
+        <li>
+          <a
+            href="/boutique"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >BOUTIQUE</a>
+        </li>
+        <li>
+          <a
+            href="/service-client"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >SERVICE CLIENT</a>
+        </li>
+        <li>
+          <a
+            href="/connexion"
+            class="font-semibold text-primary-content hover:bg-primary-focus"
+            >SE CONNECTER</a>
+        </li>
       </ul>
     </div>
   </div>
