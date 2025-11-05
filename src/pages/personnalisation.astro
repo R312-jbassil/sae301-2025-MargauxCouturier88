@@ -19,6 +19,7 @@ import bleu from "../assets/images/bleu.webp";
 import marron from "../assets/images/marron.webp";
 import violet from "../assets/images/violet.webp";
 import lunettesPreview from "../assets/images/lunettes-preview.webp";
+import aperculunettes from "../assets/images/aperculunettes.svg";
 ---
 
 <style>
@@ -409,7 +410,11 @@ import lunettesPreview from "../assets/images/lunettes-preview.webp";
             class="border-2 rounded-3xl p-6 mb-6 flex items-center justify-center"
             style="border-color: #d4a574; background-color: #f5f1e8; height: 300px;"
           >
-            <p class="text-gray-400">Aperçu lunettes</p>
+            <img
+              src={aperculunettes.src}
+              alt="Aperçu lunettes"
+              class="w-full h-full object-contain"
+            />
           </div>
 
           <div class="text-center mb-6">
