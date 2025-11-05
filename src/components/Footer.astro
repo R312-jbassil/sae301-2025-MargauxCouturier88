@@ -1,0 +1,155 @@
+---
+import logo from "../assets/images/logo-black.svg";
+import facebookIcon from "../assets/images/facebook.svg";
+import instagramIcon from "../assets/images/instagram.svg";
+import linkedinIcon from "../assets/images/linkedin.svg";
+import twitterIcon from "../assets/images/twitter.svg";
+---
+
+<footer class="bg-base-200">
+    <div class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-12">
+            <div class="flex flex-col items-center justify-center">
+                <img
+                    src={logo.src}
+                    alt="TaVue Logo"
+                    class="w-32 md:w-40 h-32 md:h-40 object-contain"
+                />
+            </div>
+
+            <div
+                class="flex flex-col items-center md:items-start justify-center"
+            >
+                <h3
+                    class="text-xs md:text-sm font-bold font-['Raleway'] mb-4 tracking-wide text-neutral"
+                >
+                    LIENS JURIDIQUES
+                </h3>
+                <ul
+                    class="space-y-2 text-center md:text-left text-xs font-['Open Sans'] text-neutral"
+                >
+                    <li>
+                        <a
+                            href="/conditions-generales"
+                            class="hover:underline transition"
+                        >
+                            CONDITIONS GÉNÉRALES DE VENTE
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/confidentialite"
+                            class="hover:underline transition"
+                        >
+                            POLITIQUE DE CONFIDENTIALITÉ
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/mentions-legales"
+                            class="hover:underline transition"
+                        >
+                            MENTIONS LÉGALES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/retours" class="hover:underline transition">
+                            POLITIQUE DE RETOUR ET REMBOURSEMENT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <h3
+                    class="text-xs md:text-sm font-bold font-['Raleway'] mb-4 tracking-wide text-neutral"
+                >
+                    NEWSLETTER
+                </h3>
+                <input
+                    type="email"
+                    placeholder="Entrer votre email"
+                    class="w-full px-4 py-2 rounded text-xs font-['Open Sans'] mb-3 focus:outline-none border-2 border-neutral bg-base-100 text-neutral"
+                />
+                <button
+                    class="w-full btn btn-primary text-primary-content py-2 rounded font-bold font-['Raleway'] text-xs hover:btn-accent hover:text-accent-content transition"
+                >
+                    JE M'ABONNE
+                </button>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <h3
+                    class="text-xs md:text-sm font-bold font-['Raleway'] mb-4 tracking-wide text-neutral"
+                >
+                    SUIVEZ-NOUS
+                </h3>
+                <div class="grid grid-cols-2 gap-3 md:gap-4">
+                    <a
+                        href="https://facebook.com"
+                        class="social-icon-info transition"
+                        aria-label="Facebook"
+                    >
+                        <img
+                            src={facebookIcon.src}
+                            alt="Facebook"
+                            class="w-8 md:w-10 h-8 md:h-10 object-contain"
+                            style="filter: brightness(0); transition: filter 0.3s ease;"
+                        />
+                    </a>
+                    <a
+                        href="https://instagram.com"
+                        class="social-icon-info transition"
+                        aria-label="Instagram"
+                    >
+                        <img
+                            src={instagramIcon.src}
+                            alt="Instagram"
+                            class="w-8 md:w-10 h-8 md:h-10 object-contain"
+                            style="filter: brightness(0); transition: filter 0.3s ease;"
+                        />
+                    </a>
+                    <a
+                        href="https://linkedin.com"
+                        class="social-icon-info transition"
+                        aria-label="LinkedIn"
+                    >
+                        <img
+                            src={linkedinIcon.src}
+                            alt="LinkedIn"
+                            class="w-8 md:w-10 h-8 md:h-10 object-contain"
+                            style="filter: brightness(0); transition: filter 0.3s ease;"
+                        />
+                    </a>
+                    <a
+                        href="https://twitter.com"
+                        class="social-icon-info transition"
+                        aria-label="Twitter"
+                    >
+                        <img
+                            src={twitterIcon.src}
+                            alt="Twitter"
+                            class="w-8 md:w-10 h-8 md:h-10 object-contain"
+                            style="filter: brightness(0); transition: filter 0.3s ease;"
+                        />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="container mx-auto px-6 py-4 flex justify-end border-t border-base-300"
+    >
+        <p class="text-xs font-['Open Sans'] text-neutral opacity-60">
+            Copyright © 2025 - Tous droits réservés
+        </p>
+    </div>
+</footer>
+
+<style>
+    .social-icon-info:hover img {
+        filter: brightness(0) saturate(100%) invert(14%) sepia(65%)
+            saturate(745%) hue-rotate(177deg) brightness(96%) !important;
+    }
+</style>
