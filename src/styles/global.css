@@ -1,1 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, caramellatte;
+}
+@theme {
+    -- : 'Raleway', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+@plugin "daisyui/theme" {
+  name: "caramellatte";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: #F5F1E8;
+  --color-base-300: #D4A574;
+  --color-base-content: #3A3A3C;
+  --color-primary: #A77B5B;
+  --color-primary-content: #F5F1E8;
+  --color-secondary: #D4A574;
+  --color-secondary-content: #F5F1E8;
+  --color-accent: #1B5E75;
+  --color-accent-content: #F5F1E8;
+  --color-neutral: #3A3A3C;
+  --color-neutral-content: #F5F1E8;
+  --color-info: #1B5E75;
+  --color-info-content: #F5F1E8;
+  --color-success: oklch(64% 0.2 131.684);
+  --color-success-content: oklch(98% 0.031 120.757);
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(57% 0.245 27.325);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 1;
+}
