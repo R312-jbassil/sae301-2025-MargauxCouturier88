@@ -1,11 +1,587 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import videofemme from "../assets/video/femme-lunettes.mp4";
+import serenity from "../assets/images/lunettes-serenity.webp";
+import aurora from "../assets/images/lunettes-aurora.webp";
+import zenith from "../assets/images/lunettes-zenith.webp";
+import homme from "../assets/images/homme-lunettes.webp";
+import iconeFeuille from "../assets/images/feuille.svg";
+import iconeRecyclage from "../assets/images/recyclage.svg";
+import iconeMedaille from "../assets/images/medaille.svg";
 ---
 
-<Layout title="Accueil">
+<Layout title="TaVue - Accueil">
+    <section
+        class="w-full h-screen md:h-[600px] bg-gray-900 flex items-center justify-center overflow-hidden relative"
+    >
+        <video
+            class="absolute inset-0 w-full h-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+            <source src={videofemme} type="video/mp4" />
+            Votre navigateur ne supporte pas la vidéo HTML5.
+        </video>
+        <div class="absolute inset-0 bg-black/30"></div>
+    </section>
 
+    <section class="w-full py-12 md:py-24" style="background-color: #D4A574;">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-10 md:mb-16">
+                <h2
+                    class="text-2xl md:text-4xl font-bold font-['Raleway'] text-neutral"
+                >
+                    NOS BEST-SELLER
+                </h2>
+            </div>
+
+            <div class="hidden md:flex justify-center gap-8 flex-wrap">
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg w-full md:w-80"
+                    style="background-color: #F5F1E8;"
+                >
+                    <div
+                        class="mb-4 rounded-2xl overflow-hidden h-64 mx-4 mt-4"
+                    >
+                        <img
+                            src={serenity.src}
+                            alt="Lunettes Serenity"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
+                    <div class="flex flex-col text-center px-4 pb-4">
+                        <h3
+                            class="text-base font-bold font-['Raleway'] text-neutral mb-3"
+                        >
+                            Lunettes Serenity
+                        </h3>
+                        <div
+                            class="flex items-center justify-center gap-1 mb-3 text-accent text-2xl"
+                        >
+                            <span>★★★★☆</span>
+                        </div>
+                        <p class="text-lg font-bold text-neutral mb-4">239 €</p>
+                        <button
+                            class="btn btn-sm md:btn-md px-6 py-2 rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                            style="background-color: #A0826D; color: white;"
+                        >
+                            DÉCOUVRIR
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg w-full md:w-80"
+                    style="background-color: #F5F1E8;"
+                >
+                    <div
+                        class="mb-4 rounded-2xl overflow-hidden h-64 mx-4 mt-4"
+                    >
+                        <img
+                            src={aurora.src}
+                            alt="Lunettes Aurora"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
+                    <div class="flex flex-col text-center px-4 pb-4">
+                        <h3
+                            class="text-base font-bold font-['Raleway'] text-neutral mb-3"
+                        >
+                            Lunettes Aurora
+                        </h3>
+                        <div
+                            class="flex items-center justify-center gap-1 mb-3 text-accent text-2xl"
+                        >
+                            <span>★★★★★</span>
+                        </div>
+                        <p class="text-lg font-bold text-neutral mb-4">249 €</p>
+                        <button
+                            class="btn btn-sm md:btn-md px-6 py-2 rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                            style="background-color: #A0826D; color: white;"
+                        >
+                            DÉCOUVRIR
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg w-full md:w-80"
+                    style="background-color: #F5F1E8;"
+                >
+                    <div
+                        class="mb-4 rounded-2xl overflow-hidden h-64 mx-4 mt-4"
+                    >
+                        <img
+                            src={zenith.src}
+                            alt="Lunettes Zenith"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
+                    <div class="flex flex-col text-center px-4 pb-4">
+                        <h3
+                            class="text-base font-bold font-['Raleway'] text-neutral mb-3"
+                        >
+                            Lunettes Zenith
+                        </h3>
+                        <div
+                            class="flex items-center justify-center gap-1 mb-3 text-accent text-2xl"
+                        >
+                            <span>★★☆☆☆</span>
+                        </div>
+                        <p class="text-lg font-bold text-neutral mb-4">215 €</p>
+                        <button
+                            class="btn btn-sm md:btn-md px-6 py-2 rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                            style="background-color: #A0826D; color: white;"
+                        >
+                            DÉCOUVRIR
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:hidden overflow-x-auto pb-4">
+                <div class="flex gap-4 min-w-max px-4">
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md flex-shrink-0 w-80"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <div
+                            class="mb-4 rounded-2xl overflow-hidden h-56 mx-4 mt-4"
+                        >
+                            <img
+                                src={serenity.src}
+                                alt="Lunettes Serenity"
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col text-center px-4 pb-4">
+                            <h3
+                                class="text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Lunettes Serenity
+                            </h3>
+                            <div
+                                class="flex items-center justify-center gap-1 mb-2 text-accent text-xl"
+                            >
+                                <span>★★★★☆</span>
+                            </div>
+                            <p class="text-base font-bold text-neutral mb-3">
+                                239 €
+                            </p>
+                            <button
+                                class="btn btn-sm rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                                style="background-color: #A0826D; color: white;"
+                            >
+                                DÉCOUVRIR
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md flex-shrink-0 w-80"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <div
+                            class="mb-4 rounded-2xl overflow-hidden h-56 mx-4 mt-4"
+                        >
+                            <img
+                                src={aurora.src}
+                                alt="Lunettes Aurora"
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col text-center px-4 pb-4">
+                            <h3
+                                class="text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Lunettes Aurora
+                            </h3>
+                            <div
+                                class="flex items-center justify-center gap-1 mb-2 text-accent text-xl"
+                            >
+                                <span>★★★★★</span>
+                            </div>
+                            <p class="text-base font-bold text-neutral mb-3">
+                                249 €
+                            </p>
+                            <button
+                                class="btn btn-sm rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                                style="background-color: #A0826D; color: white;"
+                            >
+                                DÉCOUVRIR
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md flex-shrink-0 w-80"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <div
+                            class="mb-4 rounded-2xl overflow-hidden h-56 mx-4 mt-4"
+                        >
+                            <img
+                                src={zenith.src}
+                                alt="Lunettes Zenith"
+                                class="w-full h-full object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col text-center px-4 pb-4">
+                            <h3
+                                class="text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Lunettes Zenith
+                            </h3>
+                            <div
+                                class="flex items-center justify-center gap-1 mb-2 text-accent text-xl"
+                            >
+                                <span>★★☆☆☆</span>
+                            </div>
+                            <p class="text-base font-bold text-neutral mb-3">
+                                215 €
+                            </p>
+                            <button
+                                class="btn btn-sm rounded-md font-bold font-['Raleway'] text-xs uppercase transition w-full"
+                                style="background-color: #A0826D; color: white;"
+                            >
+                                DÉCOUVRIR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="w-full py-12 md:py-24 bg-base-100 relative"
+        style="overflow: visible; padding-bottom: 0;"
+    >
+        <div class="container mx-auto px-4 md:px-6 pb-12 md:pb-24">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+            >
+                <div>
+                    <h2
+                        class="text-2xl md:text-4xl font-bold font-['Raleway'] text-neutral mb-4 md:mb-6"
+                    >
+                        VOS LUNETTES, VOTRE IDENTITÉ
+                    </h2>
+                    <p
+                        class="text-sm md:text-base font-['Open Sans'] text-neutral mb-6 md:mb-8 leading-relaxed"
+                    >
+                        Créez des lunettes qui vous ressemblent. Choisissez
+                        votre monture, vos verres et vos couleurs pour un style
+                        100% personnel. Chez nous, chaque paire est unique,
+                        comme vous.
+                    </p>
+                    <button
+                        class="btn px-4 md:px-6 py-2 md:py-3 rounded-md font-bold font-['Raleway'] text-xs uppercase transition"
+                        style="background-color: #A0826D; color: white;"
+                    >
+                        DÉCOUVRIR LA PERSONNALISATION
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="hidden md:block absolute right-6 top-full w-1/4 transform -translate-y-2/3"
+        >
+            <img
+                src={homme.src}
+                alt="Homme avec lunettes"
+                class="w-full h-auto object-cover"
+            />
+        </div>
+    </section>
+
+    <section class="w-full py-12 md:py-24" style="background-color: #A77B5B;">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-10 md:mb-16">
+                <h2
+                    class="text-2xl md:text-4xl font-bold font-['Raleway'] text-white"
+                >
+                    TÉMOIGNAGES
+                </h2>
+                <p
+                    class="text-sm md:text-base font-['Open Sans'] text-base-100 mt-3 md:mt-4 max-w-2xl mx-auto px-2"
+                >
+                    Nos clients créent leurs lunettes sur-mesure et partagent
+                    leur expérience. Parcourez leurs témoignages et voyez
+                    comment, comme eux, vous pouvez réinventer votre style.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto pb-4 -mx-4 md:mx-0 px-4 md:px-0">
+                <div
+                    class="flex gap-4 md:gap-8 min-w-max md:min-w-fit md:flex-wrap md:justify-center px-2 md:px-0"
+                >
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <h3
+                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                        >
+                            DES LUNETTES QUI ME RESSEMBLENT ENFIN
+                        </h3>
+                        <div
+                            class="w-12 h-1 bg-neutral mb-4"
+                            style="background-color: #A77B5B;"
+                        >
+                        </div>
+                        <p
+                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                        >
+                            J'ai pu personnaliser chaque détail de ma monture,
+                            du coloris à la forme, pour obtenir une paire unique
+                            qui correspond parfaitement à ma personnalité. Le
+                            processus était simple, le rendu est super et je me
+                            sens satisfait à l'aise avec mes nouvelles lunettes
+                            !
+                        </p>
+                        <p
+                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                        >
+                            MARC, 32 ANS
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <h3
+                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                        >
+                            UNE EXPÉRIENCE VRAIMENT UNIQUE
+                        </h3>
+                        <div
+                            class="w-12 h-1 bg-neutral mb-4"
+                            style="background-color: #A77B5B;"
+                        >
+                        </div>
+                        <p
+                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                        >
+                            Pouvoir jouer avec les options et visualiser le
+                            résultat en direct a rendu la création très
+                            amusante. Mes lunettes sont devenues mon accessoire
+                            préféré, et la beauté incomparable. Je recommande le
+                            service à ceux qui veulent se démarquer.
+                        </p>
+                        <p
+                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                        >
+                            ALINE, 26 ANS
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <h3
+                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                        >
+                            SERVICE CLIENT ET QUALITÉ AU RENDEZ-VOUS
+                        </h3>
+                        <div
+                            class="w-12 h-1 bg-neutral mb-4"
+                            style="background-color: #A77B5B;"
+                        >
+                        </div>
+                        <p
+                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                        >
+                            Le suivi de commande était top et j'ai été bien
+                            conseillé tout au long du processus. Le rendu final
+                            est moderne et la qualité irréprochable. Pour moi,
+                            c'est la meilleure façon de porter des lunettes qui
+                            me ressemblent vraiment.
+                        </p>
+                        <p
+                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                        >
+                            JULIEN, 45 ANS
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <h3
+                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                        >
+                            CONFORT ET IDENTITÉ RÉUNIS
+                        </h3>
+                        <div
+                            class="w-12 h-1 bg-neutral mb-4"
+                            style="background-color: #A77B5B;"
+                        >
+                        </div>
+                        <p
+                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                        >
+                            La personnalisation m'a offert des lunettes à la
+                            fois élégantes et très confortables. J'ai apprécié
+                            le côté intuitif du système et la possibilité de
+                            prévisualiser le modèle avant de commander.
+                            Maintenant, ma monture reflète parfaitement qui je
+                            suis.
+                        </p>
+                        <p
+                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                        >
+                            NICOLAS, 41 ANS
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-md transition hover:shadow-lg p-4 md:p-6 flex-shrink-0 w-72 md:w-96 flex flex-col"
+                        style="background-color: #F5F1E8;"
+                    >
+                        <h3
+                            class="text-xs md:text-base font-bold font-['Raleway'] text-neutral mb-3 uppercase line-clamp-3"
+                        >
+                            UN STYLE QUI M'APPARTIENT
+                        </h3>
+                        <div
+                            class="w-12 h-1 bg-neutral mb-4"
+                            style="background-color: #A77B5B;"
+                        >
+                        </div>
+                        <p
+                            class="text-xs md:text-sm font-['Open Sans'] text-neutral mb-auto leading-relaxed"
+                        >
+                            Je voulais une paire de lunettes vraiment adaptée à
+                            mon visage et à mon style. Grâce au configurateur,
+                            j'ai pu choisir la forme, la couleur et les détails
+                            en toute simplicité. Résultat : je reçois sans arrêt
+                            des compliments ! C'est exactement ce que je
+                            cherchais pour affirmer mon personnalité.
+                        </p>
+                        <p
+                            class="text-xs font-['Open Sans'] text-neutral mt-4 md:mt-6 font-semibold"
+                        >
+                            SOPHIE, 28 ANS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full py-12 md:py-24 bg-base-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-3xl mx-auto">
+                <div
+                    class="border-4 rounded-3xl p-6 md:p-16"
+                    style="border-color: #1B5E75; background-color: #F5F1E8;"
+                >
+                    <h2
+                        class="text-2xl md:text-4xl font-bold font-['Raleway'] text-neutral text-center mb-4 md:mb-6"
+                    >
+                        NEWSLETTER
+                    </h2>
+
+                    <p
+                        class="text-sm md:text-base font-['Open Sans'] text-neutral text-center mb-8 md:mb-12"
+                    >
+                        Soyez le premier ou la première à découvrir nos
+                        exclusivités et conseils pour un style unique.
+                    </p>
+
+                    <div
+                        class="flex flex-col md:flex-row gap-3 md:gap-4 mb-8 md:mb-12"
+                    >
+                        <input
+                            type="email"
+                            placeholder="Entrer votre email"
+                            class="flex-1 px-4 md:px-6 py-2 md:py-3 rounded-md border-2 border-neutral focus:outline-none font-['Open Sans'] text-sm md:text-base"
+                            style="background-color: white; border-color: #D4A574;"
+                        />
+                        <button
+                            class="btn btn-sm md:btn-md px-4 md:px-8 py-2 md:py-3 rounded-md font-bold font-['Raleway'] text-xs uppercase transition whitespace-nowrap"
+                            style="background-color: #A0826D; color: white;"
+                        >
+                            JE M'ABONNE
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="mb-3 md:mb-4">
+                                <img
+                                    src={iconeFeuille.src}
+                                    alt="Écologie"
+                                    class="w-12 md:w-16 h-12 md:h-16 mx-auto"
+                                />
+                            </div>
+                            <h3
+                                class="text-xs md:text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Confection éco-responsable
+                            </h3>
+                            <p class="text-xs font-['Open Sans'] text-neutral">
+                                Pour réduire notre impact sur la planète.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <div class="mb-3 md:mb-4">
+                                <img
+                                    src={iconeRecyclage.src}
+                                    alt="Recyclage"
+                                    class="w-12 md:w-16 h-12 md:h-16 mx-auto"
+                                />
+                            </div>
+                            <h3
+                                class="text-xs md:text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Utilisation de matériaux recyclés
+                            </h3>
+                            <p class="text-xs font-['Open Sans'] text-neutral">
+                                Et recyclables dans toutes nos montures.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center">
+                            <div class="mb-3 md:mb-4">
+                                <img
+                                    src={iconeMedaille.src}
+                                    alt="Qualité"
+                                    class="w-12 md:w-16 h-12 md:h-16 mx-auto"
+                                />
+                            </div>
+                            <h3
+                                class="text-xs md:text-sm font-bold font-['Raleway'] text-neutral mb-2"
+                            >
+                                Priorité à la qualité et à la longévité
+                            </h3>
+                            <p class="text-xs font-['Open Sans'] text-neutral">
+                                Pour limiter les déchets inutiles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<style>
+    .btn {
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #1b5e75 !important;
+        color: white !important;
+    }
+</style>
