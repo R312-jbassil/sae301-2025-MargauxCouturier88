@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
-import type { TypedPocketBase } from "./pocketbase-types";
+type TypedPocketBase = InstanceType<typeof PocketBase>;
 var path='';
 if(import.meta.env.MODE === 'development')
     path = 'http://localhost:8090'    //localhost = machine de dev
